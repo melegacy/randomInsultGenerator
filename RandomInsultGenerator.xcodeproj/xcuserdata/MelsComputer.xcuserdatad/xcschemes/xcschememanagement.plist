@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>InsultShare.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>RandomInsultGenerator.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>002F07D01C7B4CAC006AF33D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>00947ECE1C73E72C001A4A9E</key>
 		<dict>
 			<key>primary</key>

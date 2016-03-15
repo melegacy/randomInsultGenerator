@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BeginningString</key>
+	<array>
+		<string>All the charm of a</string>
+		<string>All the elegance of a</string>
+		<string>All the finesse of a</string>
+		<string>Are you really a</string>
+		<string>Are you related to a</string>
+		<string>As likeable as a</string>
+		<string>As much fun to be with as a</string>
+		<string>As welcome as a</string>
+		<string>Basically, you are a</string>
+		<string>Be gone, you</string>
+		<string>Brains of a</string>
+		<string>Buzz-off, you</string>
+		<string>Can't you be less of a</string>
+		<string>Did you have to try hard to become a</string>
+		<string>Did you learn manners from a</string>
+		<string>Do you enjoy being a</string>
+		<string>Do you take pleasure in being a</string>
+		<string>Don&apos;t ever come back, you</string>
+		<string>Don&apos;t give me that, you</string>
+		<string>Don&apos;t take this the wrong way but you&apos;re a</string>
+		<string>Don&apos;t they shoot people like you, you</string>
+		<string>Drop dead, you</string>
+		<string>Even your best friend calls you a</string>
+		<string>Get lost, you</string>
+		<string>Get out of my sight, you</string>
+		<string>How come you&apos;re such a</string>
+		<string>How did I find such a</string>
+		<string>How did you get to be such a</string>
+		<string>I assume you are trying to be a</string>
+		<string>I can finally say that I&apos;ve met a</string>
+		<string>I can tell that you are a</string>
+		<string>I hate to be critical, but you&apos;re a</string>
+		<string>I just know you&apos;re a</string>
+		<string>I know your sort, you</string>
+		<string>I would describe you as a</string>
+		<string>I&apos;d prefer the company of a</string>
+		<string>I&apos;d rate you slightly lower than a</string>
+		<string>I&apos;d rather spend time with a</string>
+		<string>I&apos;d rather trust a</string>
+		<string>I&apos;ll be diplomatic and only call you a</string>
+		<string>I&apos;m looking at a</string>
+		<string>Inferior to a</string>
+		<string>It would be a kindness to call you a</string>
+		<string>It&apos;s an understatement to say that you&apos;re a</string>
+		<string>It&apos;s not my fault you&apos;re a</string>
+		<string>I&apos;ve had more fun with a</string>
+		<string>I&apos;ve never seen a worse example of a</string>
+		<string>Keep your distance, you</string>
+		<string>Let me compare thee to a</string>
+		<string>Never before have I met such a</string>
+		<string>Run along now, you</string>
+		<string>Shove off, you</string>
+		<string>Shut up, you</string>
+		<string>Sod off, you</string>
+		<string>Take heed, you</string>
+		<string>The charm and personality of a</string>
+		<string>The last thing I need is another</string>
+		<string>The truth is, you&apos;re just a</string>
+		<string>There&apos;s no cure for being a</string>
+		<string>There&apos;s nothing I hate more than a</string>
+		<string>There&apos;s nothing worse than a</string>
+		<string>Thou art a</string>
+		<string>To me, you resemble a</string>
+		<string>To put if kindly, you are a</string>
+		<string>To put it mildly, you&apos;re a</string>
+		<string>Up yours, you</string>
+		<string>Was your mother a</string>
+		<string>Watch it, you</string>
+		<string>Well, aren&apos;t you just a</string>
+		<string>Were you conceived by a</string>
+		<string>Were you descended from a</string>
+		<string>Were you raised by a</string>
+		<string>Were you spawned from a</string>
+		<string>Were you the illegitimate offspring of a</string>
+		<string>What are you looking at you</string>
+		<string>What colour is the sky in your world, you</string>
+		<string>What did you just call me, you</string>
+		<string>What made you such a</string>
+		<string>When all is said and done, youre a</string>
+		<string>Where did you learn to be such a</string>
+		<string>Who asked you to butt in you</string>
+		<string>Who asked your opinion you</string>
+		<string>Who taught you to be such a</string>
+		<string>Why am I wasting my time with a</string>
+		<string>Will I ever find a bigger example of a</string>
+		<string>You</string>
+		<string>You are a</string>
+		<string>You are a fine example of a</string>
+		<string>You are best summed up as a</string>
+		<string>You are far worse than a</string>
+		<string>You are inferior to a</string>
+		<string>You are the living definition of a</string>
+		<string>You are the world&apos;s worst example of a</string>
+		<string>You are what we in the trade refer to as a</string>
+		<string>You are worryingly similar to a</string>
+		<string>You can&apos;t help being a</string>
+		<string>You carry on like a</string>
+		<string>You come across as a</string>
+		<string>You compare unfavourably with a</string>
+		<string>You couldn&apos;t hold a candle to a</string>
+		<string>You couldn&apos;t outwit a</string>
+		<string>You do a good impression of a</string>
+		<string>You don&apos;t even qualify as a</string>
+		<string>You have all the desirability of a</string>
+		<string>You have all the dynamism of a</string>
+		<string>You have been found guilty of being a</string>
+		<string>You have degenerated into a</string>
+		<string>You have my pity, you</string>
+		<string>You have the brains of a</string>
+		<string>You have the deneamour of a</string>
+		<string>You have the manners of a</string>
+		<string>You have the social skills of a</string>
+		<string>You look like a</string>
+		<string>You poor excuse for a</string>
+		<string>You rank infinitely lower than a</string>
+		<string>You remind me of a</string>
+		<string>You smell like a</string>
+		<string>You son of a</string>
+		<string>You were spawned from a</string>
+		<string>You would even offend a</string>
+		<string>You wouldn&apos;t match up to a</string>
+		<string>You&apos;d be rejected by a</string>
+		<string>You&apos;d have to improve to become a</string>
+		<string>You&apos;d have to progress to become a</string>
+		<string>Your mother was a</string>
+		<string>You&apos;re about as engaging as a</string>
+		<string>You&apos;re about as entertaining as a</string>
+		<string>You&apos;re indistinguishable from a</string>
+		<string>You&apos;re just another</string>
+		<string>You&apos;re such a</string>
+		<string>You&apos;re the spitting image of a</string>
+		<string>You&apos;re worse than a</string>
+	</array>
+	<key>MiddleString</key>
+	<array>
+        <string>abhorrent</string>
+        <string>abnormal</string>
+        <string>absurdly revolting</string>
+        <string>absurdly stupid</string>
+        <string>abysmal</string>
+        <string>awful</string>
+        <string>bed wetting</string>
+        <string>bewilderingly stupid</string>
+        <string>blathering</string>
+        <string>blemished</string>
+        <string>bloated</string>
+        <string>blood sucking</string>
+        <string>boring</string>
+        <string>brainless</string>
+        <string>bulging</string>
+        <string>callous</string>
+        <string>catastrophic</string>
+        <string>chubby</string>
+        <string>clumsy</string>
+        <string>cockeyed</string>
+        <string>complete and utter</string>
+        <string>contaminated</string>
+        <string>cowardly</string>
+        <string>craggy old</string>
+        <string>criminally insane</string>
+        <string>decaying</string>
+        <string>decomposed</string>
+        <string>decomposing</string>
+        <string>defective</string>
+        <string>degenerative</string>
+        <string>degraded</string>
+        <string>delinquent</string>
+        <string>deplorable little</string>
+        <string>depraved</string>
+        <string>desperately hideous</string>
+        <string>devious</string>
+        <string>diabolical</string>
+        <string>dirty</string>
+        <string>dirty little</string>
+        <string>dirty, low-down</string>
+        <string>disagreeable little</string>
+        <string>diseased</string>
+        <string>disfunctional</string>
+        <string>disgusting little</string>
+        <string>dishevelled</string>
+        <string>dismal old</string>
+        <string>disreputable</string>
+        <string>dithering</string>
+        <string>dreadful little</string>
+        <string>embarrassingly awful</string>
+        <string>evil</string>
+        <string>exceedingly disgusting</string>
+        <string>exceptionally moronic</string>
+        <string>extraordinarily repulsive</string>
+        <string>fat</string>
+        <string>fat and ugly</string>
+        <string>fat, ugly, ingorant</string>
+        <string>festering</string>
+        <string>foul-smelling</string>
+        <string>ghastly</string>
+        <string>ghastly little</string>
+        <string>gibbering</string>
+        <string>good-for-nothing</string>
+        <string>great big</string>
+        <string>gruesome</string>
+        <string>gruesomely deformed</string>
+        <string>gut-wrenching</string>
+        <string>hairbrained</string>
+        <string>half-witted</string>
+        <string>heinous</string>
+        <string>hideous</string>
+        <string>hopeless</string>
+        <string>horrific</string>
+        <string>inbred</string>
+        <string>incontinent</string>
+        <string>incredibly dull</string>
+        <string>incredibly foolish little</string>
+        <string>incredibly stupid</string>
+        <string>incredibly ugly</string>
+        <string>incredibly unpleasant</string>
+        <string>irredeemably repulsive</string>
+        <string>irredeemably stupid</string>
+        <string>irredeemably ugly</string>
+        <string>lousy little</string>
+        <string>mad</string>
+        <string>miserable</string>
+        <string>morally bankrupt</string>
+        <string>moronic</string>
+        <string>nasty</string>
+        <string>odorous</string>
+        <string>pathetic</string>
+        <string>pathetic little</string>
+        <string>perverted</string>
+        <string>pox-ridden</string>
+        <string>pus-filled</string>
+        <string>putrefying</string>
+        <string>putrid</string>
+        <string>rabid</string>
+        <string>rancid</string>
+        <string>reeking</string>
+        <string>reprehensible</string>
+        <string>repulsive</string>
+        <string>revolting</string>
+        <string>ridiculous little</string>
+        <string>rotten</string>
+        <string>sad little</string>
+        <string>savage</string>
+        <string>scabby old</string>
+        <string>scum-sucking</string>
+        <string>scurvy-ridden</string>
+        <string>second-rate</string>
+        <string>shameless</string>
+        <string>slithering</string>
+        <string>socially inadequate</string>
+        <string>spotty</string>
+        <string>steaming great</string>
+        <string>stench-emmiting</string>
+        <string>stinking</string>
+        <string>stupid</string>
+        <string>terminally stupid</string>
+        <string>terrible</string>
+        <string>totally unhinged</string>
+        <string>trashy little</string>
+        <string>truly awful</string>
+        <string>truly grotesque</string>
+        <string>truly miserable</string>
+        <string>truly revolting</string>
+        <string>ugly</string>
+        <string>unbelivably stupid</string>
+        <string>unbelivably ugly</string>
+        <string>unpleasant</string>
+        <string>unsightly</string>
+        <string>unspeakable</string>
+        <string>unspeakably hideous</string>
+        <string>unspeakably ugly</string>
+        <string>vile and disgusting</string>
+        <string>whiffy</string>
+        <string>wretched little</string>
+        <string>zombie flesh-eating</string>
+	</array>
+	<key>EndString</key>
+	<array>
+        <string>abcess</string>
+        <string>abomination</string>
+        <string>afterbirth</string>
+        <string>armpit</string>
+        <string>assault on the senses</string>
+        <string>baboon</string>
+        <string>baboon's backside</string>
+        <string>bacteria</string>
+        <string>badger</string>
+        <string>barnyard animal</string>
+        <string>bint</string>
+        <string>bogeyman</string>
+        <string>bogtrotter</string>
+        <string>bonehead</string>
+        <string>brazen hussy</string>
+        <string>bricklayers' bum</string>
+        <string>bucket of bile</string>
+        <string>buttock</string>
+        <string>cabbage</string>
+        <string>cankerworm</string>
+        <string>carcass</string>
+        <string>caveman</string>
+        <string>cess-pit</string>
+        <string>cess-pool</string>
+        <string>cheapskate</string>
+        <string>circus freak</string>
+        <string>corpse</string>
+        <string>cow pat</string>
+        <string>cretin</string>
+        <string>dead dog</string>
+        <string>dead fish</string>
+        <string>deadbeat</string>
+        <string>delinquent</string>
+        <string>dimwit</string>
+        <string>dog breath</string>
+        <string>donkey</string>
+        <string>dotard</string>
+        <string>dunderhead</string>
+        <string>dung heap</string>
+        <string>earthworm</string>
+        <string>earwig</string>
+        <string>farty pants</string>
+        <string>floozy</string>
+        <string>gimp</string>
+        <string>git</string>
+        <string>goat</string>
+        <string>gorilla</string>
+        <string>gremlin</string>
+        <string>grot bag</string>
+        <string>hag</string>
+        <string>hamster</string>
+        <string>harlot</string>
+        <string>headcase</string>
+        <string>headless chicken</string>
+        <string>headless corpse</string>
+        <string>hippy</string>
+        <string>hooker</string>
+        <string>horse's backside</string>
+        <string>idiot</string>
+        <string>ignoramus</string>
+        <string>imbecile</string>
+        <string>jock strap</string>
+        <string>knucklehead</string>
+        <string>leper</string>
+        <string>lizard</string>
+        <string>low-life</string>
+        <string>maggot</string>
+        <string>maniac</string>
+        <string>mass of slime</string>
+        <string>monster</string>
+        <string>moron</string>
+        <string>nappy stain</string>
+        <string>numbskull</string>
+        <string>nutcase</string>
+        <string>old fart</string>
+        <string>oozing boil</string>
+        <string>orangutan</string>
+        <string>pair of dirty underpants</string>
+        <string>pig</string>
+        <string>pile of bat droppings</string>
+        <string>pile of entrails</string>
+        <string>pile of poo</string>
+        <string>pile of vomit</string>
+        <string>pit of pestilence</string>
+        <string>plague upon humanity</string>
+        <string>pool of pigswill</string>
+        <string>porker</string>
+        <string>prat</string>
+        <string>rat</string>
+        <string>rat bag</string>
+        <string>reprobate</string>
+        <string>reptile</string>
+        <string>scrubber</string>
+        <string>scumbag</string>
+        <string>scuzz-bucket</string>
+        <string>sheep</string>
+        <string>shrew</string>
+        <string>skid mark</string>
+        <string>skunk</string>
+        <string>slapper</string>
+        <string>slob</string>
+        <string>slug</string>
+        <string>smeghead</string>
+        <string>strumpet</string>
+        <string>tart</string>
+        <string>toad</string>
+        <string>toadstool</string>
+        <string>toe-rag</string>
+        <string>toilet-mouth</string>
+        <string>trollop</string>
+        <string>tub of lard</string>
+        <string>turd</string>
+        <string>turnip</string>
+        <string>vagabond</string>
+        <string>vegetable</string>
+        <string>vulture</string>
+        <string>wart</string>
+        <string>waste of space</string>
+        <string>weakest link</string>
+        <string>weasle</string>
+        <string>wench</string>
+        <string>wind bag</string>
+        <string>wombat</string>
+        <string>worm</string>
+        <string>zit</string>
+        <string>truly miserable</string>
+        <string>truly revolting</string>
+        <string>ugly</string>
+        <string>unbelivably stupid</string>
+        <string>unbelivably ugly</string>
+        <string>unpleasant</string>
+        <string>unsightly</string>
+        <string>unspeakable</string>
+        <string>unspeakably hideous</string>
+        <string>unspeakably ugly</string>
+        <string>vile and disgusting</string>
+        <string>whiffy</string>
+        <string>wretched little</string>
+        <string>zombie flesh-eating</string>
+    </array>
+</dict>
+</plist>

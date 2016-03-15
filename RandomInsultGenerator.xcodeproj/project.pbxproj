@@ -14,6 +14,7 @@
 		00947EDD1C73E72D001A4A9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00947EDB1C73E72D001A4A9E /* LaunchScreen.storyboard */; };
 		00947EE81C73E72D001A4A9E /* RandomInsultGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00947EE71C73E72D001A4A9E /* RandomInsultGeneratorTests.swift */; };
 		00947EF31C73E72D001A4A9E /* RandomInsultGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00947EF21C73E72D001A4A9E /* RandomInsultGeneratorUITests.swift */; };
+		00947F011C73E783001A4A9E /* Insults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00947F001C73E783001A4A9E /* Insults.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +34,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		002F07DF1C7B4CAC006AF33D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		003EB7AD1C8CAB4400267395 /* RandomInsultGenerator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RandomInsultGenerator-Bridging-Header.h"; sourceTree = "<group>"; };
 		00947ECF1C73E72C001A4A9E /* RandomInsultGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomInsultGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00947ED21C73E72D001A4A9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00947ED41C73E72D001A4A9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +62,7 @@
 		00947EEE1C73E72D001A4A9E /* RandomInsultGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomInsultGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00947EF21C73E72D001A4A9E /* RandomInsultGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomInsultGeneratorUITests.swift; sourceTree = "<group>"; };
 		00947EF41C73E72D001A4A9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00947F001C73E783001A4A9E /* Insults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Insults.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +119,8 @@
 				00947ED91C73E72D001A4A9E /* Assets.xcassets */,
 				00947EDB1C73E72D001A4A9E /* LaunchScreen.storyboard */,
 				00947EDE1C73E72D001A4A9E /* Info.plist */,
+				00947F001C73E783001A4A9E /* Insults.plist */,
+				003EB7AD1C8CAB4400267395 /* RandomInsultGenerator-Bridging-Header.h */,
 			);
 			path = RandomInsultGenerator;
 			sourceTree = "<group>";
@@ -135,6 +153,7 @@
 				00947ECB1C73E72C001A4A9E /* Sources */,
 				00947ECC1C73E72C001A4A9E /* Frameworks */,
 				00947ECD1C73E72C001A4A9E /* Resources */,
+				002F07DF1C7B4CAC006AF33D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -235,6 +254,7 @@
 				00947EDD1C73E72D001A4A9E /* LaunchScreen.storyboard in Resources */,
 				00947EDA1C73E72D001A4A9E /* Assets.xcassets in Resources */,
 				00947ED81C73E72D001A4A9E /* Main.storyboard in Resources */,
+				00947F011C73E783001A4A9E /* Insults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RandomInsultGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.melissaallgeier.RandomInsultGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RandomInsultGenerator/RandomInsultGenerator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -411,10 +434,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RandomInsultGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.melissaallgeier.RandomInsultGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RandomInsultGenerator/RandomInsultGenerator-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -485,6 +510,7 @@
 				00947EF91C73E72D001A4A9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00947EFA1C73E72D001A4A9E /* Build configuration list for PBXNativeTarget "RandomInsultGeneratorTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +519,7 @@
 				00947EFC1C73E72D001A4A9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00947EFD1C73E72D001A4A9E /* Build configuration list for PBXNativeTarget "RandomInsultGeneratorUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +528,7 @@
 				00947EFF1C73E72D001A4A9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
