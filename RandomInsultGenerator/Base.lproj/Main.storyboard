@@ -57,16 +57,40 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Dru-kk-apH">
+                                <rect key="frame" x="112" y="589" width="191" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="191" id="6Sa-Mg-MyF"/>
+                                    <constraint firstAttribute="width" constant="121" id="A1j-cS-Xtb"/>
+                                    <constraint firstAttribute="height" constant="28" id="reC-Ec-rOA"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="English"/>
+                                    <segment title="Spanish"/>
+                                    <segment title="German"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="A1j-cS-Xtb"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="changeLanguageAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="xFr-x8-FOH"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.19320154671717171" green="0.19320154671717171" blue="0.19320154671717171" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ocB-xR-ntQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="1Tt-YU-Bd0"/>
                             <constraint firstItem="lfi-AW-Htj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bgb-UV-bNn"/>
                             <constraint firstItem="2IZ-fe-B7c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Idl-2V-uPu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Dru-kk-apH" secondAttribute="bottom" constant="75" id="OAv-JM-JZJ"/>
                             <constraint firstItem="lfi-AW-Htj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YHJ-GT-Va2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ocB-xR-ntQ" secondAttribute="trailing" constant="-20" id="f0W-6E-247"/>
                             <constraint firstItem="2IZ-fe-B7c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="k43-FJ-VbX"/>
                             <constraint firstItem="2IZ-fe-B7c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uhk-6c-g9g"/>
+                            <constraint firstItem="Dru-kk-apH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="woB-iE-QNa"/>
                             <constraint firstItem="ocB-xR-ntQ" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" id="ydh-N0-TZ7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2IZ-fe-B7c" secondAttribute="trailing" constant="20" id="zND-gU-YW4"/>
                         </constraints>
@@ -76,6 +100,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="InsultLabel" destination="2IZ-fe-B7c" id="jJ5-ef-I62"/>
+                        <outlet property="changeLanguage" destination="Dru-kk-apH" id="nqn-VM-cRp"/>
                         <outlet property="tapOrShake" destination="lfi-AW-Htj" id="q7f-Ff-YI8"/>
                     </connections>
                 </viewController>

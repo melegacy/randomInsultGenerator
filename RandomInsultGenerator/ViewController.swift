@@ -30,6 +30,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var InsultLabel: UILabel!
     @IBOutlet weak var tapOrShake: UILabel!
+    @IBOutlet weak var changeLanguage: UISegmentedControl!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,18 +45,8 @@ class ViewController: UIViewController {
         tap1.numberOfTapsRequired = 1
         view.addGestureRecognizer(tap1)
         
-        
-        //double tap clears the screen
-        let tap2 = UITapGestureRecognizer(target: self, action: "doubleTapped")
-        tap2.numberOfTapsRequired = 2
-        view.addGestureRecognizer(tap2)
-        
         tapOrShake.hidden = false
-    }
-    
-    func doubleTapped() {
-        InsultLabel.text = ""
-        tapOrShake.hidden = false
+        
     }
 
 
@@ -91,16 +84,18 @@ class ViewController: UIViewController {
         let randomNumber2 = Int(arc4random_uniform(UInt32(middleString.count)))
         let randomNumber3 = Int(arc4random_uniform(UInt32(endString.count)))
         
-        //change insult label using random parts
-//        InsultLabel.text = ((beginningString[randomNumber1]) + " " + (middleString[randomNumber2]) + " " + (endString[randomNumber3] + "!"))
-//        tapOrShake.hidden = true
+        var originalInsult = ((beginningString[randomNumber1]) + " " + (middleString[randomNumber2]) + " " + (endString[randomNumber3] + "!"))
         
-       
+        //change insult label using random parts
+        InsultLabel.text = originalInsult
         tapOrShake.hidden = true
-        asYoda("an%20insult%20goes%20here")
+        
     }
     
     
+    
+    
+    //Share button
     @IBAction func ShareButton(sender: UIButton) {
         // Check and see if the text field is empty
         if (InsultLabel.text == "") {
@@ -125,57 +120,67 @@ class ViewController: UIViewController {
         presentViewController(activityViewController, animated: true, completion: {})
     }
 
+    
+    //tranlation button
+    @IBAction func changeLanguageAction(sender: AnyObject) {
+        if(changeLanguage.selectedSegmentIndex == 0) {
+            //do nothing
+        } else if (changeLanguage.selectedSegmentIndex == 1) {
+            //translate to spanish
+        } else if (changeLanguage.selectedSegmentIndex == 2) {
+            //translateInsultGerman(originalInsult)
+        }
+    }
+    
+    
+    
+    
     //TRANSLATION API
     //MARK: - REST calls
-    // This makes the GET call to httpbin.org. It simply gets the IP address and displays it on the screen.
-    func asYoda(yodaInsult: String) {
+    // This makes the GET call to google translate. 
+    
+    func translateInsultGerman(insult: String) {
         
-        var translatedString: String = ""
-        // Setup the session to make REST GET call.  Notice the URL is https NOT http!!
-        let postEndpoint: String = ("https://www.googleapis.com/language/translate/v2?key=AIzaSyA262UJdmaDvR8pCsXMB35qQd_DR1p82YQ&source=en&target=de&q=" + (yodaInsult))
-
-        let session = NSURLSession.sharedSession()
+       
+        let originalUrl = ("https://www.googleapis.com/language/translate/v2?key=AIzaSyADNcayNHrDCbM3Yf5GuZ09mTtTq1-ORtM&source=en&target=de&q=" + "originalInsult")
+        let  urlString :String = originalUrl.stringByRemovingPercentEncoding!
+        
+        let postEndpoint: String = urlString
         let url = NSURL(string: postEndpoint)!
         
-        // Make the POST call and handle it in a completion handler
+        //print("\(originalInsult)")
+        //print("\(url)")
+        
+        let session = NSURLSession.sharedSession()
         session.dataTaskWithURL(url, completionHandler: { ( data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
-            // Make sure we get an OK response
-            guard let realResponse = response as? NSHTTPURLResponse where
-                realResponse.statusCode == 200 else {
-                    print("Not a 200 response")
-                    return
-            }
-            
+        
             // Read the JSON
             do {
-                if let yodaString = NSString(data:data!, encoding: NSUTF8StringEncoding) {
-                    // Print what we got from the call
-                    //print(yodaString)
+                if let insultString = NSString(data:data!, encoding: NSUTF8StringEncoding) {
  
-                    // Parse the JSON to get the yoda insult
+                    // Parse the JSON to get the translated insult
                     let jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
                     
-                    let translated = jsonDictionary["data"]!["translations"]!![0]["translatedText"] as! String
-                    //print (translated)
+                    print("\(jsonDictionary)")
                     
-                    translatedString = translated
-                    print (translatedString)
+                    if let translated = jsonDictionary["data"]!["translations"]!![0]["translatedText"] as! String? {
+                        //Update the label
+                        dispatch_async(dispatch_get_main_queue(), {
+                            self.InsultLabel.text = translated
+                        })
+                       // print("\(translated)")
+                    } else {
+                        print("error")
+                    }
                     
-                    // Update the label
-                    //self.InsultLabel.text = translated
-                    //self.performSelectorOnMainThread("InsultLabel", withObject: translated, waitUntilDone: false)
+                    //let translated = jsonDictionary["data"]!["translations"]!![0]["translatedText"] as! String
                     
-                    dispatch_async(dispatch_get_main_queue(), {
-                      self.InsultLabel.text = translated
-                    })
                 }
             } catch {
                 print("bad things happened")
             }
             
         }).resume()
-        //return translatedString
-        //print (translatedString)
     }
 }
 

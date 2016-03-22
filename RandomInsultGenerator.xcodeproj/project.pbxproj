@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0029836B1CA2018200260AD0 /* Insult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029836A1CA2018200260AD0 /* Insult.swift */; };
 		00947ED31C73E72D001A4A9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00947ED21C73E72D001A4A9E /* AppDelegate.swift */; };
 		00947ED51C73E72D001A4A9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00947ED41C73E72D001A4A9E /* ViewController.swift */; };
 		00947ED81C73E72D001A4A9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00947ED61C73E72D001A4A9E /* Main.storyboard */; };
@@ -48,7 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		003EB7AD1C8CAB4400267395 /* RandomInsultGenerator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RandomInsultGenerator-Bridging-Header.h"; sourceTree = "<group>"; };
+		0029836A1CA2018200260AD0 /* Insult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Insult.swift; path = ../Insult.swift; sourceTree = "<group>"; };
 		00947ECF1C73E72C001A4A9E /* RandomInsultGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomInsultGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00947ED21C73E72D001A4A9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00947ED41C73E72D001A4A9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +114,7 @@
 		00947ED11C73E72D001A4A9E /* RandomInsultGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				0029836A1CA2018200260AD0 /* Insult.swift */,
 				00947ED21C73E72D001A4A9E /* AppDelegate.swift */,
 				00947ED41C73E72D001A4A9E /* ViewController.swift */,
 				00947ED61C73E72D001A4A9E /* Main.storyboard */,
@@ -120,7 +122,6 @@
 				00947EDB1C73E72D001A4A9E /* LaunchScreen.storyboard */,
 				00947EDE1C73E72D001A4A9E /* Info.plist */,
 				00947F001C73E783001A4A9E /* Insults.plist */,
-				003EB7AD1C8CAB4400267395 /* RandomInsultGenerator-Bridging-Header.h */,
 			);
 			path = RandomInsultGenerator;
 			sourceTree = "<group>";
@@ -280,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00947ED51C73E72D001A4A9E /* ViewController.swift in Sources */,
+				0029836B1CA2018200260AD0 /* Insult.swift in Sources */,
 				00947ED31C73E72D001A4A9E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
