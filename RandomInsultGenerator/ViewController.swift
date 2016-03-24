@@ -33,11 +33,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var tapOrShake: UILabel!
     @IBOutlet weak var changeLanguage: UISegmentedControl!
     
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         //set light status bar
         UIApplication.sharedApplication().statusBarStyle = .LightContent
@@ -51,10 +50,6 @@ class ViewController: UIViewController {
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     //allows shakes to be recognized
     override func canBecomeFirstResponder() -> Bool {
@@ -85,7 +80,7 @@ class ViewController: UIViewController {
         let randomNumber2 = Int(arc4random_uniform(UInt32(middleString.count)))
         let randomNumber3 = Int(arc4random_uniform(UInt32(endString.count)))
         
-        var originalInsult = ((beginningString[randomNumber1]) + " " + (middleString[randomNumber2]) + " " + (endString[randomNumber3] + "!"))
+        let originalInsult = ((beginningString[randomNumber1]) + " " + (middleString[randomNumber2]) + " " + (endString[randomNumber3] + "!"))
         
         //change insult label using random parts
         InsultLabel.text = originalInsult
@@ -123,15 +118,15 @@ class ViewController: UIViewController {
 
     
     //tranlation button
-    @IBAction func changeLanguageAction(sender: AnyObject) {
-        if(changeLanguage.selectedSegmentIndex == 0) {
-            //do nothing
-        } else if (changeLanguage.selectedSegmentIndex == 1) {
-            //translate to spanish
-        } else if (changeLanguage.selectedSegmentIndex == 2) {
-            //translateInsultGerman(originalInsult)
-        }
-    }
+//    @IBAction func changeLanguageAction(sender: AnyObject) {
+//        if(changeLanguage.selectedSegmentIndex == 0) {
+//            //do nothing
+//        } else if (changeLanguage.selectedSegmentIndex == 1) {
+//            //translate to spanish
+//        } else if (changeLanguage.selectedSegmentIndex == 2) {
+//            //translateInsultGerman(originalInsult)
+//        }
+//    }
     
     
     
