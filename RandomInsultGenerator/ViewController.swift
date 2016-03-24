@@ -25,6 +25,7 @@
 
 import UIKit
 import Foundation
+import TwitterKit
 
 class ViewController: UIViewController {
     
@@ -37,6 +38,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         //set light status bar
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         
@@ -48,7 +50,6 @@ class ViewController: UIViewController {
         tapOrShake.hidden = false
         
     }
-
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -139,51 +140,51 @@ class ViewController: UIViewController {
     //MARK: - REST calls
     // This makes the GET call to google translate. 
     
-    func translateInsultGerman(insult: String) {
-        
-       
-        let originalUrl = ("https://www.googleapis.com/language/translate/v2?key=AIzaSyADNcayNHrDCbM3Yf5GuZ09mTtTq1-ORtM&source=en&target=de&q=" + "originalInsult")
-        let  urlString :String = originalUrl.stringByRemovingPercentEncoding!
-        
-        let postEndpoint: String = urlString
-        let url = NSURL(string: postEndpoint)!
-        
-        //print("\(originalInsult)")
-        //print("\(url)")
-        
-        let session = NSURLSession.sharedSession()
-        session.dataTaskWithURL(url, completionHandler: { ( data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
-        
-            // Read the JSON
-            do {
-                if let insultString = NSString(data:data!, encoding: NSUTF8StringEncoding) {
- 
-                    // Parse the JSON to get the translated insult
-                    let jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
-                    
-                    print("\(jsonDictionary)")
-                    
-                    if let translated = jsonDictionary["data"]!["translations"]!![0]["translatedText"] as! String? {
-                        //Update the label
-                        dispatch_async(dispatch_get_main_queue(), {
-                            self.InsultLabel.text = translated
-                        })
-                       // print("\(translated)")
-                    } else {
-                        print("error")
-                    }
-                    
-                    //let translated = jsonDictionary["data"]!["translations"]!![0]["translatedText"] as! String
-                    
-                }
-            } catch {
-                print("bad things happened")
-            }
-            
-        }).resume()
-    }
+//    func translateInsultGerman(insult: String) {
+//        
+//       
+//        let originalUrl = ("https://www.googleapis.com/language/translate/v2?key=AIzaSyADNcayNHrDCbM3Yf5GuZ09mTtTq1-ORtM&source=en&target=de&q=" + "originalInsult")
+//        let  urlString :String = originalUrl.stringByRemovingPercentEncoding!
+//        
+//        let postEndpoint: String = urlString
+//        let url = NSURL(string: postEndpoint)!
+//        
+//        //print("\(originalInsult)")
+//        //print("\(url)")
+//        
+//        let session = NSURLSession.sharedSession()
+//        session.dataTaskWithURL(url, completionHandler: { ( data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
+//        
+//            // Read the JSON
+//            do {
+//                if let insultString = NSString(data:data!, encoding: NSUTF8StringEncoding) {
+// 
+//                    // Parse the JSON to get the translated insult
+//                    let jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
+//                    
+//                    print("\(jsonDictionary)")
+//                    
+//                    if let translated = jsonDictionary["data"]!["translations"]!![0]["translatedText"] as! String? {
+//                        //Update the label
+//                        dispatch_async(dispatch_get_main_queue(), {
+//                            self.InsultLabel.text = translated
+//                        })
+//                       // print("\(translated)")
+//                    } else {
+//                        print("error")
+//                    }
+//                    
+//                    //let translated = jsonDictionary["data"]!["translations"]!![0]["translatedText"] as! String
+//                    
+//                }
+//            } catch {
+//                print("bad things happened")
+//            }
+//            
+//        }).resume()
+//    }
+//}
+//
+//
+
 }
-
-
-
-

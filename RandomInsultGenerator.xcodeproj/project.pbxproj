@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0012F3DE1CA4113E0061CB20 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0012F3DA1CA4113E0061CB20 /* Fabric.framework */; };
+		0012F3DF1CA4113E0061CB20 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0012F3DB1CA4113E0061CB20 /* TwitterKit.framework */; };
+		0012F3E01CA4113E0061CB20 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0012F3DC1CA4113E0061CB20 /* TwitterKitResources.bundle */; };
+		0012F3E11CA4113E0061CB20 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0012F3DD1CA4113E0061CB20 /* TwitterCore.framework */; };
+		0012F3E31CA432FA0061CB20 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0012F3E21CA432FA0061CB20 /* LoginViewController.swift */; };
 		0029836B1CA2018200260AD0 /* Insult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029836A1CA2018200260AD0 /* Insult.swift */; };
 		00947ED31C73E72D001A4A9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00947ED21C73E72D001A4A9E /* AppDelegate.swift */; };
 		00947ED51C73E72D001A4A9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00947ED41C73E72D001A4A9E /* ViewController.swift */; };
@@ -49,6 +54,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0012F3DA1CA4113E0061CB20 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		0012F3DB1CA4113E0061CB20 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = SOURCE_ROOT; };
+		0012F3DC1CA4113E0061CB20 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
+		0012F3DD1CA4113E0061CB20 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = SOURCE_ROOT; };
+		0012F3E21CA432FA0061CB20 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0029836A1CA2018200260AD0 /* Insult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Insult.swift; path = ../Insult.swift; sourceTree = "<group>"; };
 		00947ECF1C73E72C001A4A9E /* RandomInsultGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomInsultGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00947ED21C73E72D001A4A9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +81,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0012F3DE1CA4113E0061CB20 /* Fabric.framework in Frameworks */,
+				0012F3E11CA4113E0061CB20 /* TwitterCore.framework in Frameworks */,
+				0012F3DF1CA4113E0061CB20 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,14 +127,19 @@
 		00947ED11C73E72D001A4A9E /* RandomInsultGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				0029836A1CA2018200260AD0 /* Insult.swift */,
 				00947ED21C73E72D001A4A9E /* AppDelegate.swift */,
+				0012F3E21CA432FA0061CB20 /* LoginViewController.swift */,
 				00947ED41C73E72D001A4A9E /* ViewController.swift */,
+				0029836A1CA2018200260AD0 /* Insult.swift */,
 				00947ED61C73E72D001A4A9E /* Main.storyboard */,
 				00947ED91C73E72D001A4A9E /* Assets.xcassets */,
 				00947EDB1C73E72D001A4A9E /* LaunchScreen.storyboard */,
 				00947EDE1C73E72D001A4A9E /* Info.plist */,
 				00947F001C73E783001A4A9E /* Insults.plist */,
+				0012F3DA1CA4113E0061CB20 /* Fabric.framework */,
+				0012F3DB1CA4113E0061CB20 /* TwitterKit.framework */,
+				0012F3DC1CA4113E0061CB20 /* TwitterKitResources.bundle */,
+				0012F3DD1CA4113E0061CB20 /* TwitterCore.framework */,
 			);
 			path = RandomInsultGenerator;
 			sourceTree = "<group>";
@@ -155,6 +173,7 @@
 				00947ECC1C73E72C001A4A9E /* Frameworks */,
 				00947ECD1C73E72C001A4A9E /* Resources */,
 				002F07DF1C7B4CAC006AF33D /* Embed App Extensions */,
+				0012F3D91CA410A50061CB20 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -256,6 +275,7 @@
 				00947EDA1C73E72D001A4A9E /* Assets.xcassets in Resources */,
 				00947ED81C73E72D001A4A9E /* Main.storyboard in Resources */,
 				00947F011C73E783001A4A9E /* Insults.plist in Resources */,
+				0012F3E01CA4113E0061CB20 /* TwitterKitResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +295,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0012F3D91CA410A50061CB20 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 73b296832ab2d0340790f64481bdca23815c10c3 712997ce5891290104c8ae7781152f3faac4cef6f0410a9f439b5bc828446ae8";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		00947ECB1C73E72C001A4A9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0012F3E31CA432FA0061CB20 /* LoginViewController.swift in Sources */,
 				00947ED51C73E72D001A4A9E /* ViewController.swift in Sources */,
 				0029836B1CA2018200260AD0 /* Insult.swift in Sources */,
 				00947ED31C73E72D001A4A9E /* AppDelegate.swift in Sources */,
@@ -423,6 +460,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RandomInsultGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.melissaallgeier.RandomInsultGenerator;
@@ -437,6 +478,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RandomInsultGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.melissaallgeier.RandomInsultGenerator;
